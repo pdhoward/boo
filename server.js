@@ -11,12 +11,14 @@ var path        = require('path');
 var app = express();
 var httpServer = new http.Server(app);
 var port = 3000;
+
 var htmlFile = path.resolve(__dirname, './public/index.html');
 
-app.get('/*', function(req, res) {
-		console.log(tryit());
+app.use(express.static('public'))
+
+app.get('/', function(req, res) {
 		res.sendFile(htmlFile)
-		});
+	});
 
 httpServer.listen(port);
 
