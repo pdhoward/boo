@@ -1,0 +1,80 @@
+body {
+ margin: 0;
+ background: black;
+ font-family: sans-serif, sans, helvetica, arial;
+ color: yellow;
+ overflow: hidden;
+ position: absolute;
+ top: 0;
+ bottom: 0;
+ left: 0;
+ right: 0;
+}
+#loading {
+ position: absolute;
+ left: 0;
+ right: 0;
+ top: 25%;
+ text-align: center;
+ font-size: 200%;
+ text-shadow: purple 0 0 32px, purple 0 0 16px, purple 0 0 8px;
+}
+canvas {
+ position: absolute;
+ left: 50%;
+top: 50%;
+max-width: 100vh;
+max-height: 100vh;
+}
+.fade {
+ transition: opacity 0.5s linear;
+ -moz-transition: opacity 0.5s linear;
+ -webkit-transition: opacity 0.5s linear;
+}
+.fade.out {
+ opacity: 0;
+}
+#buttons {
+ position: absolute;
+ bottom: 8px;
+right: 8px;
+text-align: right;
+}
+#buttons span {
+ cursor: pointer;
+ font-size: 110%;
+/*    width: 4em; */
+padding: 0.4em 0.6em;
+margin: 0.2em 0 0 0.2em;
+ border: thin solid black;
+ border-radius: 0.5em;
+ background: orange;
+ color: black;
+ text-shadow: yellow 0 0 8px, yellow 0 0 4px;
+text-align: center;
+/*   text-align: left; */
+ vertical-align: middle;
+ display: inline-block;
+ background-image: linear-gradient(to bottom, yellow, orange);
+}
+#buttons.stack {
+}
+#buttons.stack span {
+display: block;
+}
+#buttons.center {
+ text-align: center;
+ left: 8px;
+}
+#buttons span:active {
+ text-shadow: orange 0 0 8px, yellow 0 0 4px;
+ background: brown;
+ background-image: linear-gradient(to bottom, orange, brown);
+ -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+a {
+text-decoration: none;
+}
+.hidden {
+ display: none;
+}
