@@ -16,7 +16,7 @@ Getting the app running on your local machine takes only a few steps:
 
 
 ## License and Use
- [LICENSE](.github/LICENSE.txt).
+ [LICENSE](LICENSE.txt).
 
 ## Contributing
 
