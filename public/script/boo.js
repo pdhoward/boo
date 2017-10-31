@@ -50,15 +50,6 @@ function resize() {
 					  0, 0, canv.width, canv.height,
 					  0, 0, temp.width, temp.height);
 
-		/* snarl. this shit doesn't work.
-		   why can't mobile canvas pixels just be pixels?
-		var scaleFactor = window.devicePixelRatio || 1;
-		if(scaleFactor > 1) {
-			size = size* scaleFactor;
-			canv.style.scale = 1 / scaleFactor;
-		}
-		*/
-
 		// resize and reposition
 		canv.width = size;
 		canv.height = size;
@@ -213,18 +204,6 @@ function carve(fromTemplate) {
 					  0, 0, mask.width, mask.height,
 					  0, 0, size, size);
 
-	/*
-	// soften edges
-	scratch.width = scratch.width;
-	scratchCtx.drawImage(face,
-						 0, 0, face.width, face.height,
-						 0, 0, face.width * 0.333, face.height * 0.333);
-	faceCtx.globalCompositeOperation = "source-over";
-	faceCtx.drawImage(scratch,
-					  0, 0, face.width * 0.333, face.height * 0.333,
-					  0, 0, face.width, face.height);
-	scratch.width = scratch.width;
-	*/
 
 	// save a "mask" of the front of the pumpkin (saved in face)
 	dest.width = dest.width;
@@ -263,7 +242,7 @@ function carve(fromTemplate) {
 	// build pumpkin by layer and draw it shrunk, inner to outer (to dest)
 	var i;
 	var darken = 0.4;
-	//flickerCtx.globalAlpha = 0.3;  // glow brighter inside, weird with candle
+	//flickerCtx.globalAlpha = 0.3;  // glow brighter inside,
 
 	for(i = 56 * ratio; i > 0; i -= (4 * ratio)) {
 		try {
@@ -379,5 +358,5 @@ window.addEventListener("load", function () { //document, "DOMContentLoaded"
 	});
 });
 
-// hacks for dumb modern mobile browsers
+// hacks for  modern mobile browsers
 document.addEventListener("touchstart", function(){}, true);
