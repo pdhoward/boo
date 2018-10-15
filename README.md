@@ -24,5 +24,5 @@ For details, check out [CONTRIBUTING](.github/CONTRIBUTING.md).
 
 
 
-xio labs and affiliates
+Strategic Machines -  labs and affiliates
 connecting businesses with the conversational economy
