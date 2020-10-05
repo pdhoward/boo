@@ -6,6 +6,7 @@ We would love to have you contribute to this project!
 
 * check the [existing issues](https://github.com/pdhoward/boo/issues) to see if one matches the change you want to add
 * fork this project
+* to sync your project, your pull should be `git pull origin main`
 * create a descriptive branch name that starts with your name
 * make all changes on this branch
 * push this branch to your fork
