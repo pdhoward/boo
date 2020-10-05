@@ -1,18 +1,18 @@
-{
-  "name": "boo",
+{ "name": "boo",
   "version": "0.5.0",
   "main": "server.js",
+  "description": "A very scary web server",
   "engines": {
     "node": ">=4.0.0",
     "npm": ">=3.0.0"
   },
   "scripts": {
-    "start": "nodemon ./index"
+    "start": "nodemon ./server"
   },
   "dependencies": {
-    "express": "4.14.0"
+    "express": "^4.17.1"
   },
-  "author": "xio",
+  "author": "Strategic Machines",
   "license": "MIT",
-  "homepage": "http://www.xio.com"
+  "homepage": "https://proximitymachine.netlify.app/"
 }
